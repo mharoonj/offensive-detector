@@ -1,0 +1,627 @@
+{
+  "metrics": {
+    "precision": 0.9,
+    "recall": 0.9,
+    "f1_score": 0.9,
+    "accuracy": 0.9,
+    "total_examples": 20,
+    "correct_predictions": 18
+  },
+  "results": [
+    {
+      "text": "You are such an idiot! I can't believe how stupid you are.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.4664327800273895,
+        "obscene": 0.21911339461803436,
+        "severe_toxic": 0.10397404432296753,
+        "threat": 0.0939188078045845,
+        "toxic": 0.09182295948266983,
+        "identity_hate": 0.017021914944052696,
+        "non-toxic": 0.004599729087203741,
+        "normal": 0.0031163389794528484
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nANSWER: \u00a0\n- The user",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I love this movie, it's absolutely fantastic!",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.5327836871147156,
+        "non-toxic": 0.22442127764225006,
+        "identity_hate": 0.07640602439641953,
+        "normal": 0.06263294070959091,
+        "severe_toxic": 0.04563600942492485,
+        "toxic": 0.022390112280845642,
+        "insult": 0.018961085006594658,
+        "obscene": 0.016768835484981537
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Go kill yourself, you worthless piece of trash.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.40749692916870117,
+        "insult": 0.27264440059661865,
+        "toxic": 0.21305245161056519,
+        "severe_toxic": 0.06291811913251877,
+        "obscene": 0.023198777809739113,
+        "identity_hate": 0.017950840294361115,
+        "normal": 0.0015442583244293928,
+        "non-toxic": 0.0011941691627725959
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (3 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The weather is really nice today, perfect for a walk.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.26943302154541016,
+        "normal": 0.21948207914829254,
+        "non-toxic": 0.21492642164230347,
+        "identity_hate": 0.13418184220790863,
+        "severe_toxic": 0.06884484738111496,
+        "insult": 0.037385858595371246,
+        "obscene": 0.030888695269823074,
+        "toxic": 0.024857226759195328
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nRESPONSE FORMAT: \n-",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "Fuck you and your entire family!",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.37190884351730347,
+        "threat": 0.2549138069152832,
+        "toxic": 0.12330633401870728,
+        "severe_toxic": 0.10865659266710281,
+        "obscene": 0.07732836157083511,
+        "identity_hate": 0.0616690032184124,
+        "normal": 0.0011883926345035434,
+        "non-toxic": 0.001028630998916924
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (3 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "This is a great article, very informative and well-written.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.333744078874588,
+        "identity_hate": 0.17977502942085266,
+        "non-toxic": 0.17652903497219086,
+        "normal": 0.13343332707881927,
+        "severe_toxic": 0.10368970781564713,
+        "insult": 0.03101002424955368,
+        "toxic": 0.02246440201997757,
+        "obscene": 0.01935444585978985
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "You're a disgusting pig who should be ashamed.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "toxic": 0.3072936534881592,
+        "obscene": 0.29200461506843567,
+        "insult": 0.18914835155010223,
+        "severe_toxic": 0.13194061815738678,
+        "threat": 0.047213971614837646,
+        "identity_hate": 0.030616682022809982,
+        "normal": 0.001101382658816874,
+        "non-toxic": 0.0006807397585362196
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER: \n- User",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I think we should consider all perspectives on this issue.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.43987372517585754,
+        "normal": 0.1857081651687622,
+        "identity_hate": 0.09786634147167206,
+        "severe_toxic": 0.0852944403886795,
+        "insult": 0.07195025682449341,
+        "non-toxic": 0.05335468798875809,
+        "toxic": 0.04279636964201927,
+        "obscene": 0.02315605990588665
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I'm going to find you and make you pay for what you did.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.8736879825592041,
+        "insult": 0.048818133771419525,
+        "toxic": 0.023203950375318527,
+        "severe_toxic": 0.019434010609984398,
+        "obscene": 0.015468808822333813,
+        "identity_hate": 0.014226892031729221,
+        "normal": 0.0033443421125411987,
+        "non-toxic": 0.0018158621387556195
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nANSWER: \n- The user text is",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The food at this restaurant is delicious and the service is excellent.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.6384832859039307,
+        "non-toxic": 0.13530053198337555,
+        "identity_hate": 0.09837277233600616,
+        "normal": 0.051219746470451355,
+        "severe_toxic": 0.028506170958280563,
+        "insult": 0.018012287095189095,
+        "toxic": 0.01735061965882778,
+        "obscene": 0.012754573486745358
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 1 similar examples (0 toxic, 1 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "All people of your race are inferior and should be eliminated.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.3421344757080078,
+        "threat": 0.2791231870651245,
+        "toxic": 0.14671744406223297,
+        "severe_toxic": 0.10608086735010147,
+        "identity_hate": 0.07477319240570068,
+        "obscene": 0.036375075578689575,
+        "normal": 0.011211954057216644,
+        "non-toxic": 0.003583752317354083
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 0.6666666666666666,
+        "confidence": "medium",
+        "reasoning": "Based on 3 similar examples (2 toxic, 1 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": true
+    },
+    {
+      "text": "Thank you for your help, I really appreciate it!",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.4489210546016693,
+        "severe_toxic": 0.15812700986862183,
+        "identity_hate": 0.1515003740787506,
+        "normal": 0.09559907764196396,
+        "non-toxic": 0.06571531295776367,
+        "insult": 0.03889524191617966,
+        "toxic": 0.021726412698626518,
+        "obscene": 0.01951550506055355
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "You're such a moron, I can't believe anyone would listen to you.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.34732896089553833,
+        "toxic": 0.3198818266391754,
+        "severe_toxic": 0.13497819006443024,
+        "obscene": 0.0876498594880104,
+        "threat": 0.08519402146339417,
+        "identity_hate": 0.018523139879107475,
+        "non-toxic": 0.003768930211663246,
+        "normal": 0.0026750981342047453
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- If the user text is offensive or non-offensive, how do you respond to the",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The sunset was absolutely beautiful tonight.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.36812999844551086,
+        "non-toxic": 0.19720807671546936,
+        "identity_hate": 0.18222801387310028,
+        "normal": 0.11535055190324783,
+        "severe_toxic": 0.05717180669307709,
+        "insult": 0.029472362250089645,
+        "obscene": 0.029051028192043304,
+        "toxic": 0.021388184279203415
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0,
+        "confidence": "medium",
+        "reasoning": "Based on 0 similar examples (0 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I hope you die in a car accident, you piece of shit.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.534683883190155,
+        "insult": 0.2518438696861267,
+        "toxic": 0.09689081460237503,
+        "severe_toxic": 0.04788731783628464,
+        "identity_hate": 0.033235762268304825,
+        "obscene": 0.03244328498840332,
+        "normal": 0.0015401964774355292,
+        "non-toxic": 0.0014748906251043081
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is offensive or non-offensive.\nQUESTION: Is the user",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "This book provides valuable insights into the topic.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.3816390931606293,
+        "normal": 0.14913024008274078,
+        "severe_toxic": 0.13871780037879944,
+        "non-toxic": 0.1296415627002716,
+        "identity_hate": 0.12864385545253754,
+        "insult": 0.03043435886502266,
+        "toxic": 0.026226697489619255,
+        "obscene": 0.015566370449960232
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "You're a worthless piece of garbage who deserves nothing.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.3689213991165161,
+        "toxic": 0.2989322245121002,
+        "severe_toxic": 0.13695839047431946,
+        "obscene": 0.10024069249629974,
+        "threat": 0.06752590835094452,
+        "identity_hate": 0.022876694798469543,
+        "normal": 0.0023126176092773676,
+        "non-toxic": 0.002232127822935581
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (3 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The concert was amazing, the band played really well.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.47941848635673523,
+        "identity_hate": 0.19701597094535828,
+        "non-toxic": 0.12130225449800491,
+        "severe_toxic": 0.09999173134565353,
+        "normal": 0.057566989213228226,
+        "insult": 0.01759735494852066,
+        "toxic": 0.01367219164967537,
+        "obscene": 0.013434984721243382
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 2 similar examples (0 toxic, 2 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I'll track you down and make you regret ever crossing me.",
+      "ground_truth": "offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.8822259902954102,
+        "insult": 0.04033844918012619,
+        "severe_toxic": 0.03838608041405678,
+        "toxic": 0.016008874401450157,
+        "identity_hate": 0.014258423820137978,
+        "obscene": 0.005474395118653774,
+        "normal": 0.0022566835395991802,
+        "non-toxic": 0.0010511302389204502
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0,
+        "confidence": "medium",
+        "reasoning": "Based on 0 similar examples (0 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "The new policy seems well thought out and reasonable.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "normal": 0.8458530902862549,
+        "threat": 0.06999291479587555,
+        "non-toxic": 0.030205782502889633,
+        "identity_hate": 0.029769685119390488,
+        "insult": 0.0076272799633443356,
+        "severe_toxic": 0.006612195633351803,
+        "toxic": 0.00601052213460207,
+        "obscene": 0.00392852071672678
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    }
+  ],
+  "confidence_threshold": 0.3
+}

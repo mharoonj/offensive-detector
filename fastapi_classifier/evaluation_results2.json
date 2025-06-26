@@ -1,0 +1,475 @@
+{
+  "metrics": {
+    "precision": 0.5555555555555556,
+    "recall": 1.0,
+    "f1_score": 0.7142857142857143,
+    "accuracy": 0.6,
+    "total_examples": 20,
+    "correct_predictions": 12
+  },
+  "results": [
+    {
+      "text": "You are such an idiot! I can't believe how stupid you are.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.4664327800273895
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (3 toxic, 0 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I love this movie, it's absolutely fantastic!",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.5327836871147156
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive.\nANSWER: \u00a0\n- User text is",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "Go kill yourself, you worthless piece of trash.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.40749692916870117
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The weather is really nice today, perfect for a walk.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nANSWER: \u00a0\n- The user",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "Fuck you and your entire family!",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.37190884351730347
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "This is a great article, very informative and well-written.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.333744078874588
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "You're a disgusting pig who should be ashamed.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "toxic": 0.3072936534881592
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I think we should consider all perspectives on this issue.",
+      "ground_truth": "non-offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {
+        "threat": 0.43987372517585754
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.0,
+        "confidence": "high",
+        "reasoning": "Based on 3 similar examples (0 toxic, 3 non-toxic)"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "I'm going to find you and make you pay for what you did.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.8736879825592041
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The food at this restaurant is delicious and the service is excellent.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.6384832859039307
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nANSWER: \u00a0\n- The user",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "All people of your race are inferior and should be eliminated.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.3421344757080078
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": true
+    },
+    {
+      "text": "Thank you for your help, I really appreciate it!",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.4489210546016693
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is NOT offensive.\nQUESTION: Is the user text offensive or",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "You're such a moron, I can't believe anyone would listen to you.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.34732896089553833,
+        "toxic": 0.3198818266391754
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive or non-offensive.\nQUESTION: Is the",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The sunset was absolutely beautiful tonight.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.36812999844551086
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive or non-offensive.\nQUESTION: Is the",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "I hope you die in a car accident, you piece of shit.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.534683883190155
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "This book provides valuable insights into the topic.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.3816390931606293
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- Text: \"This book is not offensive. It is not offensive. It is not",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "You're a worthless piece of garbage who deserves nothing.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.3689213991165161
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is not offensive or non-offensive.\nANSWER:",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The concert was amazing, the band played really well.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.47941848635673523
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nQUESTION: Is the user text offensive or",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "I'll track you down and make you regret ever crossing me.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.8822259902954102
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- If the user text is offensive or non-offensive, the user text is likely also",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "The new policy seems well thought out and reasonable.",
+      "ground_truth": "non-offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "normal": 0.8458530902862549
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- The user text is not offensive.\nQUESTION: Is the user text offensive or",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    }
+  ],
+  "confidence_threshold": 0.3
+}

@@ -1,0 +1,22 @@
+pandas>=1.5.0
+numpy>=1.21.0
+qdrant-client>=1.7.0
+transformers>=4.30.0
+torch>=2.0.0
+sentence-transformers>=2.2.0
+tqdm>=4.64.0 
+
+
+# Additional dependencies for LLM functionality
+accelerate>=0.20.0
+datasets>=2.0.0
+scikit-learn>=1.0.0
+
+# Optional: For better performance with local LLMs
+bitsandbytes>=0.39.0  # For quantization
+optimum>=1.8.0  # For optimized inference
+
+# Development dependencies
+pytest>=7.0.0
+black>=22.0.0
+flake8>=5.0.0 

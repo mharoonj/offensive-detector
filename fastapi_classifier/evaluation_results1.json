@@ -1,0 +1,397 @@
+{
+  "metrics": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1_score": 0.9411764705882353,
+    "accuracy": 0.8888888888888888,
+    "total_examples": 18,
+    "correct_predictions": 16
+  },
+  "results": [
+    {
+      "text": "if you do not stop, the wikapidea nijas will come to your house and kill you",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.7909499406814575
+      },
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is offensive or non-offensive.\nANSWER: \n- User text",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 1,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "You are an utter fucking faggot...u need a life outside of wikipedia...maybe a didlo fuk by ur mom?",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Hi! \n\nI wanna rape you!",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "TO SITUSH(PAKISTANI  PIG) \n\nWhat  is your problem, you bloody muslim pakistani, why the hell are you jealous of HINDUS and SIKHS ???\n\nyou born out of shit of a pig just stay away from this article...we don't prefer pakistani muslim pigs touching this pious article.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": true
+    },
+    {
+      "text": "Yo Wuhwuzdat u a bitch wit no life. Yeah u heard me u a bitch. fuck u motherfucka",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Fuck you bitch! I will go to your house and kill you with my gun!",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "threat": 0.5391265749931335
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Hey Fat and Beardy \n\nI check the Sock Puppet page a few times a year to make sure your retarded, fat ass has not put the WikiTan image back. You are sticky with pocky, you are sad and fat and beardy and I beat you like a retarded dog. I just want you to never, ever forget the time you reverted my change and I kicked your tubby ass. Never forget that, Ned, ever. You can run around Wikipedia with your fellow Simpsons CP obesessives for the rest of your life but don't forget, I kicked your anime ass off a page and made Wikipedia better for it.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "local_llm",
+        "classification": "offensive",
+        "llm_response": "- User text is offensive or non-offensive.\nANSWER: \n- User text",
+        "confidence": "medium"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "\"\n\n WHAT  IN THE FUCK ARE YOU REFERRING TOO \n\nI HAVE NO IDEA WHAT THE PISS YOU'RE REFERRING TOO, OR WHY YOU BOTHERED TO WRITE ME.  LISTEN I'VE ADDED PLENTY TO THESE PAGE INCLUDING A \"\"SMASHING\"\" ARTICLE ON SMASHED GLADYS...BUT THAT REALLY ISNT ANY OF YOU BUSSINESS NOW IS IT.  IF SOMEBODY HAS A PROBLEM WITH ANYTHING THAT I WROTE THEM I ASSUME THEY CAN CONTACT ME THROUGH REGULAR MEANS WITHOUT YOU HAVING TO \"\"WIPE THEIR ASS\"\" FOR THEM.  IF I CAPITALIZE IT IS NOT MEANT NECCISARYLY AS AN INSULT, AND MOST PEOPLE I WRITE UNDERSTAND THAT.  IN THIS CASE IT IS BECAUSE MY CAPS BUTTON ISNT WORKING FOR SOME REASON.  SO HERES AN IDEA FOR YOU...DONT SHOVE YOUR NOSE IN MY BUSSINESS, I AM CLOSE FREINDS WITH ADMINISTRATOR UNCLEG AND IM SURE HE WOULD HAVE LET ME KNOW IF I DID SOMETHING INNAPPROPRIATE.  TRY INSTEAD TO REMOVE THE PLANK OUT OF YOUR OWN EYE, RATHER THAN BITCHING ABOUT SOMETHING YOU THINK MAY HAVE OFFENED SOMEONE.  I APPRECIATE YOU COMMENTS \"",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 0.6666666666666666,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.  takes it up the arse.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Terrorize \nI will terrorise you for as long as you live - you are an arrogant, disgusting and rude excuse for a human being & you are going to die soon so I suggest you stop threatening people you bastard.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 0.6666666666666666,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Being blocked\n\nSo that's your idea of mediation, is it? R Lopez can run amok through Wikipedia with his lying crap, and I get blocked for stating my intention of stopping him unless Wikipedia's rather creaky structures do so. I've seen some silly things since I have been editing here but that would be the silliest.",
+      "ground_truth": "offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.3333333333333333,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": false
+    },
+    {
+      "text": "What are you retarded? I already am blocked. What a fucking moron.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {
+        "insult": 0.5682564377784729
+      },
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 0,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "fucking die \n\nlol rofl \njoke\n\nhahahahahahahaha\n\n U cant stop the vandal == though",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 0.6666666666666666,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 0,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "Fuck you Sarcasticidealist i will kill you with my gun as well bitch ass motherfucker}}",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 1,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "FUCK YOU ALL, LOSERS \n\nFUCK OFF MY PAGE, FAGS",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 0
+      },
+      "correct": true
+    },
+    {
+      "text": "WTF! \n\nu fckin faggot ass mutha fcker u jus re-did and delted my work and my gay school! WTF IS UR PROMBLEM U GAY CHILD MOLESTER!!!!",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": true
+    },
+    {
+      "text": "Bloody asshole \n\nYou are a bloody asshole and fucking hijra, chootiya and if you block then remember i will hack your account and find you. i will beat you so hard that you will remember.",
+      "ground_truth": "offensive",
+      "predicted": "offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "offensive",
+        "toxicity_ratio": 1.0,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 1,
+        "severe_toxic": 1,
+        "obscene": 1,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": true
+    },
+    {
+      "text": "REDIRECT Talk:Bolivian chinchilla rat",
+      "ground_truth": "offensive",
+      "predicted": "non-offensive",
+      "detected_labels": {},
+      "llm_response": {
+        "analysis_type": "rule_based",
+        "classification": "non-offensive",
+        "toxicity_ratio": 0.3333333333333333,
+        "confidence": "high"
+      },
+      "toxic_labels": {
+        "toxic": 0,
+        "severe_toxic": 0,
+        "obscene": 0,
+        "threat": 0,
+        "insult": 1,
+        "identity_hate": 1
+      },
+      "correct": false
+    }
+  ],
+  "confidence_threshold": 0.5
+}
